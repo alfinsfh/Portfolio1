@@ -35,6 +35,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <title>Designing the Future - Alfin Firmansyah</title>
+
     <style>
       /* Reset dasar */
       * {
@@ -52,6 +53,7 @@
         padding: 0;
       }
 
+
       /* Header */
       .header {
         display: flex;
@@ -59,7 +61,7 @@
         align-items: center;
         padding: 20px 40px;
         position: relative;
-        background-color: #000;
+        
       }
 
       .header__logo {
@@ -192,12 +194,15 @@
       }
 
       /* Section */
+
       .section {
-        max-width: 900px;
-        margin: 2rem 1rem;
-        padding: 40px 20px;
-        overflow: hidden;
-      }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin: 4rem 0px;
+  overflow: hidden;
+}
+
 
       .sec {
         width: 100px;
@@ -239,7 +244,7 @@
         max-width: 650px;
         margin-top: 20px;
         line-height: 1.6;
-        margin-left: 16rem;
+        margin-left: 20rem;
       }
 
       /* Skills */
@@ -412,9 +417,23 @@
           margin-left: 0;
         }
       }
+
+      .shape {
+        position: absolute;
+        left: -8rem;
+        top: -8rem;
+  width: 300px;
+  height: 300px;
+  background: rgba(243, 83, 195, 0.329); /* putih semi transparan */
+  border-radius: 50%; /* bisa jadi circle */
+  filter: blur(124px); /* efek blur */
+  z-index: 0;
+  pointer-events: none; /* biar nggak ngeganggu klik */
+      }
     </style>
   </head>
   <body>
+    <div class="shape"></div>
     <header class="header">
       <div class="header__logo">🦄</div>
       <nav class="header__nav">
@@ -445,6 +464,7 @@
     </header>
 
     <main>
+      <div class="container">
       <section id="#home" class="hero">
         <h1 data-aos="fade-up" data-aos-duration="2000" class="hero__title">
           Designing with Purpose, Strategy & Empathy
@@ -469,7 +489,8 @@
         >
       </section>
 
-      <section id="#about" class="section">
+      <section>
+        <div class="section">
         <img
           data-aos="fade-right"
           data-aos-duration="2000"
@@ -505,6 +526,7 @@
           time, I have a strong curiosity for business and digital marketing,
           where strategy meets creativity to build value and drive growth.
         </p>
+      </div>
       </section>
 
       <section data-aos="fade-up" data-aos-duration="2000" class="section">
@@ -663,6 +685,7 @@
             <!-- Tambah lagi kalau perlu -->
           </div>
         </div>
+      </div>
       </section>
     </main>
 
